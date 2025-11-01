@@ -36,8 +36,10 @@ dependencies = [
     { name = "seaborn" },
 ]
 
-[package.optional-dependencies]
+[package.dev-dependencies]
 dev = [
+    { name = "ipykernel" },
+    { name = "jupyter" },
     { name = "pytest" },
     { name = "pytest-cov" },
 ]
@@ -50,38 +52,33 @@ docs = [
     { name = "watchdog" },
 ]
 
-[package.dev-dependencies]
-dev = [
-    { name = "ipykernel" },
-    { name = "jupyter" },
-]
-
 [package.metadata]
 requires-dist = [
     { name = "ipykernel" },
     { name = "ipython" },
-    { name = "livereload", marker = "extra == 'docs'" },
     { name = "loguru" },
     { name = "matplotlib" },
-    { name = "mkdocs", marker = "extra == 'docs'" },
-    { name = "mkdocs-material", marker = "extra == 'docs'" },
-    { name = "mkdocstrings", extras = ["python"], marker = "extra == 'docs'" },
     { name = "numpy" },
     { name = "pandas" },
     { name = "pre-commit", specifier = ">=4.3.0" },
-    { name = "pytest", marker = "extra == 'dev'" },
-    { name = "pytest-cov", marker = "extra == 'dev'" },
-    { name = "ruff", marker = "extra == 'docs'" },
     { name = "scikit-learn" },
     { name = "seaborn" },
-    { name = "watchdog", marker = "extra == 'docs'" },
 ]
-provides-extras = ["dev", "docs"]
 
 [package.metadata.requires-dev]
 dev = [
     { name = "ipykernel", specifier = ">=7.0.1" },
     { name = "jupyter", specifier = ">=1.1.1" },
+    { name = "pytest" },
+    { name = "pytest-cov" },
+]
+docs = [
+    { name = "livereload" },
+    { name = "mkdocs" },
+    { name = "mkdocs-material" },
+    { name = "mkdocstrings", extras = ["python"] },
+    { name = "ruff" },
+    { name = "watchdog" },
 ]
 
 [[package]]

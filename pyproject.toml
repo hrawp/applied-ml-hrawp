@@ -39,19 +39,8 @@ Documentation = "https://denisecase.github.io/applied-ml-template/"
 Homepage = "https://github.com/denisecase/applied-ml-template"
 Repository = "https://github.com/denisecase/applied-ml-template"
 
-[project.optional-dependencies]
-dev = [
-  "pytest", # run some tests automatically only needed for code files
-  "pytest-cov", # coverage report for more visibility only needed for code files
-]
-docs = [
-  "mkdocs",                # Core MkDocs
-  "mkdocs-material",       # Modern, responsive theme
-  "mkdocstrings[python]",  # Auto-generate API docs from docstrings
-  "livereload",            # Enables live reload (auto-refresh on edit)
-  "watchdog",              # Faster and more reliable file watching
-  "ruff",                  # Needed so mkdocstrings can format signatures
-]
+# [project.optional-dependencies]
+
 
 [tool.setuptools]
 package-dir = {"" = "src"}
@@ -132,4 +121,14 @@ addopts = "--cov=src --cov-report=term-missing"
 dev = [
     "ipykernel>=7.0.1",
     "jupyter>=1.1.1",
+    "pytest", # run some tests automatically only needed for code files
+    "pytest-cov", # coverage report for more visibility only needed for code files
+]
+docs = [
+  "mkdocs",                # Core MkDocs
+  "mkdocs-material",       # Modern, responsive theme
+  "mkdocstrings[python]",  # Auto-generate API docs from docstrings
+  "livereload",            # Enables live reload (auto-refresh on edit)
+  "watchdog",              # Faster and more reliable file watching
+  "ruff",                  # Needed so mkdocstrings can format signatures
 ]
