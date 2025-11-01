@@ -8,6 +8,9 @@
 ## Introduction
 This project uses the Titanic dataset to Explore and Clean data, choose a feature to predict, and split the dataset into train and test subsets.
 
+### Note: 
+I think it is appropriate to have data examples and graphs in the notebook rather than copying into the README.  Here I include the reflections for summaries.
+
 ## Include Imports
 ## Section 1. Load and Explore the Data
 
@@ -31,7 +34,7 @@ Are there any visible class imbalances? Younger people appear to be in third cla
 
 ### 2.3 Feature Engineering
 
-
+### Reflection 2.3
 Why might family size be a useful feature for predicting survival?  This may help if a families were together.  I suspect there were seperations though.
 Why convert categorical data to numeric? It helps for mathematical cacluations for models and one-hop encoding.
 
@@ -39,6 +42,8 @@ Why convert categorical data to numeric? It helps for mathematical cacluations f
 ### 3.1 Choose features and target
 
 ### 3.2 Define X and y
+Input features: age, fare, pclass, sex, family_size
+Target: survived
 
 ### Reflection 3:
 
@@ -52,12 +57,49 @@ Split the data into training and test sets using train_test_split first and Stra
 
 ### 4.1 Basic Train/Test split
 
+Original Class Distribution:
+ pclass
+3    0.551066
+1    0.242424
+2    0.206510
+Name: proportion, dtype: float64
+Train Set Class Distribution:
+ pclass
+3    0.557584
+1    0.233146
+2    0.209270
+Name: proportion, dtype: float64
+Test Set Class Distribution:
+ pclass
+3    0.525140
+1    0.279330
+2    0.195531
+Name: proportion, dtype: float64
+
 ### 4.2 Stratified Train/Test split
+
+Original Class Distribution:
+ pclass
+3    0.551066
+1    0.242424
+2    0.206510
+Name: proportion, dtype: float64
+Train Set Class Distribution:
+ pclass
+3    0.561798
+1    0.227528
+2    0.210674
+Name: proportion, dtype: float64
+Test Set Class Distribution:
+ pclass
+3    0.508380
+1    0.301676
+2    0.189944
+Name: proportion, dtype: float64
 
 ### 4.3 Compare Results
 
 ### 4.4 Reflection 4
-
 
 Why might stratification improve model performance?  I don't think stratification would improve model performance.  It looks to have a distribution less like the original class distribution than the basic class distribution. 
 How close are the training and test distributions to the original dataset?  The stratisfied results look farther away from the original distribution for both the training and test set disbributions as compared to the basic one.
