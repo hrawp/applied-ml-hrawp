@@ -64,6 +64,8 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Midterm Project:
+      - Overview: midterm/README.md
   - Project 01:
       - Overview: project01/README.md
       - Example Analysis: project01/EXAMPLE_ANALYSIS.md

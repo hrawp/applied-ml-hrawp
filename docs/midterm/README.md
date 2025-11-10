@@ -1,13 +1,25 @@
 # Machine Learning Midterm Project: Banknote Authentication Analysis
 **Author:** AARON 
 **Date:** November, 8, 2025 
-**Objective:** Setup two model types, Neural Network and Decision Tree and use these to predict authenticity of bank notes from the UCI Banknote Authentication Dataset.
+**Objective:** Setup two model types, Neural Network and Decision Tree, and use these to predict authenticity of bank notes from the UCI Banknote Authentication Dataset.
+
 
 ## Introduction
-- 1st, This project uses the UCI Banknote Authentication Dataset to Explore and Clean data, choose a features used to predict authenticity of bank notes, and split the dataset into train and test subsets.
-- 2nd, Two model types, Neural Network and Decision Tree, will be used these to predict authenticity of bank notes from the UCI Banknote Authentication Dataset.
+- 1st, This project uses the UCI Banknote Authentication Dataset to Explore and Clean data, choose features used to predict authenticity of bank notes, and split the dataset into train and test subsets.
+- 2nd, Two model types, Neural Network and Decision Tree, will be used to predict authenticity of bank notes from the UCI Banknote Authentication Dataset.
+- 3rd, Reflections are include from the sections of the notebook.  These reflections are summaries of why choices were made and key points from the data analysis.  
 
-### Reflection 3:
+### Reflection 1:
+- 1) How many data instances are there? 1372
+- 2) How many features are there? 4
+- 3) What are the names?  Variance;     Skewness;     Curtosis;      Entropy;            
+- 4) Are there any missing values? No
+- 5) Are there any non-numeric features? Yes.  All four features are numeric.
+- 6) Are the data instances sorted on any of the attributes?  There is no a sort on any attribute.
+- 7) What two different features have the highest correlation? Skewness and Entropy against Variance
+- 8) Are there any categorical features that might be useful for prediction?  Perhaps entropy and curtosis would be a good place to start.
+
+### Reflection 2 and 3:
 - Why are these features selected?  Curtosis, Variance, and Skewness were selected based on reviewing the overview of the data in the scatter matrix.  I saw that when skewness and variance are high in value there is a tendency for genuine notes.  I also saw when there is a lower curtosis value the tendency it towards genuine notes.  So I want to focus on these.  
 - I chose for case 3 a feature engineered variable where I add the values of skewness and variance to heighten the positive values weight of the parameters.  I think that will help the model out even more.
 
@@ -50,10 +62,10 @@ Neural Network and Decision Tree Data Metric
 
 - The accuracy and other metrics were higher for this dataset compared to the Titanic dataset.  It was nice to see a higher percentage for these metrics.  
 - I'm not sure why the Neural Network for Case 1 shows such a low percentage compared to other NN Cases, but also compared to Case 1 in the Decision tree.  It seems there must be an error, but I have checked a few times and cannot locate why this happened.
-- At first I used the Case 3 engineered parameter as Skewness Times Variance.  It performed a little worse than CASE 2.  I thought I would try adding them instead, towards the end of the project, and the numbers returned tremendous.  There was only one misclassification in the CASE 3 Neural Network results.
 - I got the idea to combine the Skewness and Variance from the Scatter Matrix.  I saw Genuine notes had higher values for both these parameters.  So I thought I could combine them into one variable and that worked out great.
 - I have not tried three parameters in a neural network.  I liked the decisions surface for two inputs.  So I combined Skewness and Variance.
-
+- At first I used the Case 3 engineered parameter as Skewness Times Variance.  It performed a little worse than CASE 2.  I thought I would try adding them instead, towards the end of the project, and the numbers returned tremendous.  There was only one misclassification in the CASE 3 Neural Network results.
+- 
 ![NN Case 3 Confusion Matrix](images/Confusion_Matrix_NN_Case3.JPG)
 
 - I was happy with these results and glad inspection of the scatter plot let me to combine the correct features.
