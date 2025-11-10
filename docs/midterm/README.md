@@ -4,11 +4,12 @@
 **Objective:** Setup two model types, Neural Network and Decision Tree and use these to predict authenticity of bank notes from the UCI Banknote Authentication Dataset.
 
 ## Introduction
-This project uses the UCI Banknote Authentication Dataset to Explore and Clean data, choose a feature to predict, and split the dataset into train and test subsets.
-Setup two model types, Neural Network and Decision Tree and use these to predict authenticity of bank notes from the UCI Banknote Authentication Dataset.
+- 1st, This project uses the UCI Banknote Authentication Dataset to Explore and Clean data, choose a features used to predict authenticity of bank notes, and split the dataset into train and test subsets.
+- 2nd, Two model types, Neural Network and Decision Tree, will be used these to predict authenticity of bank notes from the UCI Banknote Authentication Dataset.
 
 ### Reflection 3:
-Why are these features selected?  Curtosis, Variance, and Skewness were selected based on reviewing the overview of the data in the scatter matrix.  I saw that when skewness and variance are high in value there is a tendency for genuine notes.  I also saw a lower curtosis value the tendency it towards genuine notes.  So I want to focus on these.  I chose for case 3 a feature engineered variable where I add the values of skewness and variance to heighten the positive values weight of the parameters.  I think that will help the model out even more.
+- Why are these features selected?  Curtosis, Variance, and Skewness were selected based on reviewing the overview of the data in the scatter matrix.  I saw that when skewness and variance are high in value there is a tendency for genuine notes.  I also saw when there is a lower curtosis value the tendency it towards genuine notes.  So I want to focus on these.  
+- I chose for case 3 a feature engineered variable where I add the values of skewness and variance to heighten the positive values weight of the parameters.  I think that will help the model out even more.
 
 ![Scatter Plot](images/ScatterPlot.JPG)
 
