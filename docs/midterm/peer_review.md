@@ -10,7 +10,7 @@ https://github.com/abeaderstadt/ml_classification_beaderstadt/blob/main/classifi
 
 ### 1 Clarity & Organization (Is the notebook structured and easy to follow?)
 
-I appreciated the project flow and additional sub sections.  For example Section 6 was well laid out and summarized the findings well.
+I appreciated the project flow and additional subsections.  For example Section 6 was well laid out and summarized the findings well.
 
 
 ### 2 Feature Selection & Justification (Do the chosen features make sense given the objectives?)

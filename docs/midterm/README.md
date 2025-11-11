@@ -7,7 +7,7 @@
 ## Introduction
 - 1st, This project uses the UCI Banknote Authentication Dataset to Explore and Clean data, choose features used to predict authenticity of bank notes, and split the dataset into train and test subsets.
 - 2nd, Two model types, Neural Network and Decision Tree, will be used to predict authenticity of bank notes from the UCI Banknote Authentication Dataset.
-- 3rd, Reflections are include from the sections of the Jupyter Notebook.  These reflections are summaries of why choices were made and key points from the data analysis.  The link to the Jupyter Notebook is: https://github.com/hrawp/applied-ml-hrawp/blob/main/notebooks/midterm/ml_midterm_aaron.ipynb  
+- 3rd, Reflections are include from the sections of the Jupyter Notebook.  These reflections are summaries of why choices were made and key points from the data analysis.  The link to the Jupyter Notebook is: [Midterm Notebook](https://github.com/hrawp/applied-ml-hrawp/blob/main/notebooks/midterm/ml_midterm_aaron.ipynb)  
 
 ### Reflection 1:
 - How many data instances are there? 1372
@@ -70,7 +70,8 @@ Neural Network and Decision Tree Data Metric
 
 - I was happy with these results and glad inspection of the scatter plot let me to combine the correct features.
 
-
+## Peer Review
+- I reviewed Alissa Beaderstadt's Midterm Project.  The review can be found at: [Beaderstadt UCI Mushroom Dataset](https://github.com/hrawp/applied-ml-hrawp/blob/main/docs/midterm/peer_review.md)
 
 ## How to Run the Jupyter Notebook
 
