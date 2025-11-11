@@ -1,23 +1,23 @@
 # Machine Learning Midterm Project: Banknote Authentication Analysis
 **Author:** AARON 
-**Date:** November, 8, 2025 
+**Date:** November 10, 2025 
 **Objective:** Setup two model types, Neural Network and Decision Tree, and use these to predict authenticity of bank notes from the UCI Banknote Authentication Dataset.
 
 
 ## Introduction
 - 1st, This project uses the UCI Banknote Authentication Dataset to Explore and Clean data, choose features used to predict authenticity of bank notes, and split the dataset into train and test subsets.
 - 2nd, Two model types, Neural Network and Decision Tree, will be used to predict authenticity of bank notes from the UCI Banknote Authentication Dataset.
-- 3rd, Reflections are include from the sections of the notebook.  These reflections are summaries of why choices were made and key points from the data analysis.  
+- 3rd, Reflections are include from the sections of the Jupyter Notebook.  These reflections are summaries of why choices were made and key points from the data analysis.  The link to the Jupyter Notebook is: https://github.com/hrawp/applied-ml-hrawp/blob/main/notebooks/midterm/ml_midterm_aaron.ipynb  
 
 ### Reflection 1:
-- 1) How many data instances are there? 1372
-- 2) How many features are there? 4
-- 3) What are the names?  Variance;     Skewness;     Curtosis;      Entropy;            
-- 4) Are there any missing values? No
-- 5) Are there any non-numeric features? Yes.  All four features are numeric.
-- 6) Are the data instances sorted on any of the attributes?  There is no a sort on any attribute.
-- 7) What two different features have the highest correlation? Skewness and Entropy against Variance
-- 8) Are there any categorical features that might be useful for prediction?  Perhaps entropy and curtosis would be a good place to start.
+- How many data instances are there? 1372
+- How many features are there? 4
+- What are the names?  Variance;     Skewness;     Curtosis;      Entropy;            
+- Are there any missing values? No
+- Are there any non-numeric features? Yes.  All four features are numeric.
+- Are the data instances sorted on any of the attributes?  There is no a sort on any attribute.
+- What two different features have the highest correlation? Skewness and Entropy against Variance
+- Are there any categorical features that might be useful for prediction?  Perhaps entropy and curtosis would be a good place to start.
 
 ### Reflection 2 and 3:
 - Why are these features selected?  Curtosis, Variance, and Skewness were selected based on reviewing the overview of the data in the scatter matrix.  I saw that when skewness and variance are high in value there is a tendency for genuine notes.  I also saw when there is a lower curtosis value the tendency it towards genuine notes.  So I want to focus on these.  
@@ -69,3 +69,30 @@ Neural Network and Decision Tree Data Metric
 ![NN Case 3 Confusion Matrix](images/Confusion_Matrix_NN_Case3.JPG)
 
 - I was happy with these results and glad inspection of the scatter plot let me to combine the correct features.
+
+
+
+## How to Run the Jupyter Notebook
+
+This Jupyter Notebook utilizes some packages in the uv environment and will install some dependencies.  The following set of commands would help you complete these two objectives. 
+
+```shell
+uv venv
+uv python pin 3.12
+uv sync --extra dev --extra docs --upgrade
+uv run python --version
+```
+
+**Windows (PowerShell):**
+
+```shell
+.\.venv\Scripts\activate
+```
+
+**macOS / Linux / WSL:**
+
+```shell
+source .venv/bin/activate
+```
+
+There are imports at the top of the Jupyter Notebook that should also be run to utilize the installed software and run the code in the rest of the Jupyter Notebook.
