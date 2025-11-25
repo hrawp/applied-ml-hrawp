@@ -12,13 +12,13 @@
         <meta name="author" content="Aaron Pelton">
       
       
-        <link rel="canonical" href="https://hrawp.github.io/applied-ml-hrawp/project04/">
+        <link rel="canonical" href="https://hrawp.github.io/applied-ml-hrawp/final/">
       
       
-        <link rel="prev" href="../project03/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../project05/">
+        <link rel="next" href="../midterm/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#project-4-predicting-a-continuous-target-with-regression-titanic" class="md-skip">
+        <a href="#final-predicting-medical-cost-with-regression" class="md-skip">
           Skip to content
         </a>
       
@@ -283,8 +283,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -295,13 +297,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -317,7 +317,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Final Project
@@ -328,10 +328,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../final/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -342,6 +364,236 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-1-import-and-inspect-the-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 1. Import and Inspect the Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Section 1. Import and Inspect the Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reflection-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection 1:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-2-data-exploration-and-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 2. Data Exploration and Preparation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-3-feature-selection-and-justification" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 3. Feature Selection and Justification
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Section 3. Feature Selection and Justification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reflection-2-and-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection 2 and 3:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-4-train-a-regression-model-linear-regression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 4. Train a Regression Model (Linear Regression)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Section 4. Train a Regression Model (Linear Regression)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reflection-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection 4:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-age-bmi-2-smoker-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding Age + BMI * (2 * Smoker + 1)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-5-compare-alternative-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 5. Compare Alternative Models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Section 5. Compare Alternative Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#55-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.5 Reflection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#56-compare-all-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.6 Compare All Models
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reflection-57" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection 5.7:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-6-final-thoughts-insights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 6. Final Thoughts &amp; Insights
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Section 6. Final Thoughts &amp; Insights">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-summarize-findings" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Summarize Findings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-discuss-challenges-faced" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Discuss challenges faced.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-if-you-had-more-time-what-would-you-try-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 If you had more time, what would you try next?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peer-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Peer Review
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-run-the-jupyter-notebook" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Run the Jupyter Notebook
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -583,8 +835,6 @@
       
   
   
-    
-  
   
   
     
@@ -597,11 +847,13 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
@@ -617,7 +869,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Project 04
@@ -628,32 +880,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Overview
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../project04/" class="md-nav__link">
         
   
   
@@ -664,164 +894,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#section-3-feature-selection-and-justification" class="md-nav__link">
-    <span class="md-ellipsis">
-      Section 3. Feature Selection and Justification
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Section 3. Feature Selection and Justification">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#31-choose-features-and-target" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.1 Choose features and target
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#reflection-2-and-3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reflection 2 and 3:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#reflection-4" class="md-nav__link">
-    <span class="md-ellipsis">
-      Reflection 4:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-age" class="md-nav__link">
-    <span class="md-ellipsis">
-      Adding Age
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#worst" class="md-nav__link">
-    <span class="md-ellipsis">
-      Worst
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#best" class="md-nav__link">
-    <span class="md-ellipsis">
-      Best
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#54-reflections-in-a-markdown-cell" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.4 Reflections (in a Markdown cell):
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cubic-vs-5th-order-polynomial-comparison" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cubic vs 5th Order Polynomial Comparison
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#section-6-final-thoughts-insights" class="md-nav__link">
-    <span class="md-ellipsis">
-      Section 6. Final Thoughts &amp; Insights
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Section 6. Final Thoughts &amp; Insights">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#61-summarize-findings" class="md-nav__link">
-    <span class="md-ellipsis">
-      6.1 Summarize Findings
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#62-discuss-challenges" class="md-nav__link">
-    <span class="md-ellipsis">
-      6.2 Discuss Challenges
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-run-the-jupyter-notebook" class="md-nav__link">
-    <span class="md-ellipsis">
-      How to Run the Jupyter Notebook
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -945,6 +1017,39 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#section-1-import-and-inspect-the-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 1. Import and Inspect the Data
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Section 1. Import and Inspect the Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reflection-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reflection 1:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-2-data-exploration-and-preparation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 2. Data Exploration and Preparation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#section-3-feature-selection-and-justification" class="md-nav__link">
     <span class="md-ellipsis">
       Section 3. Feature Selection and Justification
@@ -955,15 +1060,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#31-choose-features-and-target" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.1 Choose features and target
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#reflection-2-and-3" class="md-nav__link">
     <span class="md-ellipsis">
       Reflection 2 and 3:
@@ -971,6 +1067,21 @@
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-4-train-a-regression-model-linear-regression" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 4. Train a Regression Model (Linear Regression)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Section 4. Train a Regression Model (Linear Regression)">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#reflection-4" class="md-nav__link">
@@ -982,45 +1093,51 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#adding-age" class="md-nav__link">
+  <a href="#adding-age-bmi-2-smoker-1" class="md-nav__link">
     <span class="md-ellipsis">
-      Adding Age
+      Adding Age + BMI * (2 * Smoker + 1)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-5-compare-alternative-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 5. Compare Alternative Models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Section 5. Compare Alternative Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#55-reflection" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.5 Reflection
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#worst" class="md-nav__link">
+  <a href="#56-compare-all-models" class="md-nav__link">
     <span class="md-ellipsis">
-      Worst
+      5.6 Compare All Models
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#best" class="md-nav__link">
+  <a href="#reflection-57" class="md-nav__link">
     <span class="md-ellipsis">
-      Best
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#54-reflections-in-a-markdown-cell" class="md-nav__link">
-    <span class="md-ellipsis">
-      5.4 Reflections (in a Markdown cell):
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cubic-vs-5th-order-polynomial-comparison" class="md-nav__link">
-    <span class="md-ellipsis">
-      Cubic vs 5th Order Polynomial Comparison
+      Reflection 5.7:
     </span>
   </a>
   
@@ -1051,9 +1168,27 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#62-discuss-challenges" class="md-nav__link">
+  <a href="#62-discuss-challenges-faced" class="md-nav__link">
     <span class="md-ellipsis">
-      6.2 Discuss Challenges
+      6.2 Discuss challenges faced.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-if-you-had-more-time-what-would-you-try-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.3 If you had more time, what would you try next?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code
     </span>
   </a>
   
@@ -1061,6 +1196,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#peer-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Peer Review
+    </span>
+  </a>
   
 </li>
       
@@ -1092,36 +1236,27 @@
   
 
 
-<h1 id="project-4-predicting-a-continuous-target-with-regression-titanic">Project 4 - Predicting a Continuous Target with Regression (Titanic)<a class="headerlink" href="#project-4-predicting-a-continuous-target-with-regression-titanic" title="Permanent link">&para;</a></h1>
+<h1 id="final-predicting-medical-cost-with-regression">Final - Predicting Medical Cost with Regression<a class="headerlink" href="#final-predicting-medical-cost-with-regression" title="Permanent link">&para;</a></h1>
 <p><strong>Author:</strong> AARON 
-<strong>Date:</strong> November 14, 2025 
-<strong>Objective:</strong> Gain an understanding of four types of regression models and their characteristics.</p>
+<strong>Date:</strong> November 24, 2025 
+<strong>Objective:</strong> Create a Regression Model to predict Medical Claims.</p>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Using the Titanic dataset four use cases with linear regression will be explored.  The fourth case will have an engineered feature.  The best performing case will be used to see how four different regression models predict the values of fare price from the Titanic dataset.  This exercise should give some insights into how these four model types behave.</li>
+<li>Using the Medical Cost Personal Dataset, decide what inputs to use in Regression model to predict Medical Claims.</li>
+<li>Try alternate methods or engineered variables to find an optimal model.</li>
 </ul>
+<h2 id="section-1-import-and-inspect-the-data">Section 1. Import and Inspect the Data<a class="headerlink" href="#section-1-import-and-inspect-the-data" title="Permanent link">&para;</a></h2>
+<h3 id="reflection-1">Reflection 1:<a class="headerlink" href="#reflection-1" title="Permanent link">&para;</a></h3>
+<p>What do you notice about the dataset? The dataset is fully populated with 1338 records.
+Are there any data issues?  There were no missing values.</p>
+<h2 id="section-2-data-exploration-and-preparation">Section 2. Data Exploration and Preparation<a class="headerlink" href="#section-2-data-exploration-and-preparation" title="Permanent link">&para;</a></h2>
 <h2 id="section-3-feature-selection-and-justification">Section 3. Feature Selection and Justification<a class="headerlink" href="#section-3-feature-selection-and-justification" title="Permanent link">&para;</a></h2>
-<h3 id="31-choose-features-and-target">3.1 Choose features and target<a class="headerlink" href="#31-choose-features-and-target" title="Permanent link">&para;</a></h3>
-<p>Case 1: 
-input features: 'Age'
-target: fare</p>
-<p>Case 2:
-input features - 'Family Size'
-target: fare</p>
-<p>Case 3:
-input features -  'Age' and 'Family Size'
-target: fare</p>
-<p>Case 4:
-input features -  'Class Survive' and 'Family Size'
-target: fare</p>
 <h3 id="reflection-2-and-3">Reflection 2 and 3:<a class="headerlink" href="#reflection-2-and-3" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Why might these features affect a passenger’s fare:   I'm not sure age would help determine fare much except for younger children.  Family size would have some bearing as they could buy at a group rate.  </li>
-<li>List all available features:  survived, pclass, sex, age, sibsp, parch, embarked, class, who, adult_male, deck, embark_town, alive, alone </li>
-<li>Which other features could improve predictions and why:  I think class is the main determining factor on fare. </li>
-<li>How many variables are in your Case 4:  Three.  I combined class and survived to produce a number between -3 and 0.  I also have family size.</li>
-<li>Which variable(s) did you choose for Case 4 and why do you feel those could make good inputs:  I don't know for sure, but fare may have had an impact on who survived.  I am combining that with class to get two variable into one.  It also weights the equation nicely.  I'm real excited to see how this predicts the result.</li>
+<li>This dataset just had a handful of inputs to choose from.  I elected to add age and bmi then multiply that sum by 3 if a smoker as case 2.</li>
+<li>I also decided to include all inputs in case 1 to compare the results to my single engineered input.</li>
 </ul>
+<h2 id="section-4-train-a-regression-model-linear-regression">Section 4. Train a Regression Model (Linear Regression)<a class="headerlink" href="#section-4-train-a-regression-model-linear-regression" title="Permanent link">&para;</a></h2>
 <h3 id="reflection-4">Reflection 4:<a class="headerlink" href="#reflection-4" title="Permanent link">&para;</a></h3>
 <p>Compare the train vs test results for each.</p>
 <table>
@@ -1139,76 +1274,47 @@ target: fare</p>
 </thead>
 <tbody>
 <tr>
-<td>Decision Tree</td>
+<td>Linear Regression</td>
 <td>Case 1</td>
-<td>Age</td>
-<td>0.0099</td>
-<td>0.0034</td>
-<td>1441.84</td>
-<td>25.28</td>
+<td>all features</td>
+<td>0.7376</td>
+<td>0.8001</td>
+<td>30552437</td>
+<td>4013</td>
 <td>-</td>
 </tr>
 <tr>
-<td></td>
+<td>Linear Regression</td>
 <td>Case 2</td>
-<td>Family Size</td>
-<td>0.0499</td>
-<td>0.0222</td>
-<td>1414.62</td>
-<td>25.02</td>
-<td>-</td>
-</tr>
-<tr>
-<td></td>
-<td>Case 3</td>
-<td>Age, Family Size</td>
-<td>0.0734</td>
-<td>0.0497</td>
-<td>1374.76</td>
-<td>24.28</td>
-<td>-</td>
-</tr>
-<tr>
-<td></td>
-<td>Case 4</td>
-<td>Family Size, Survived, Class</td>
-<td>0.3293</td>
-<td>0.4128</td>
-<td>849.46</td>
-<td>19.76</td>
+<td>3ptindex</td>
+<td>0.7454</td>
+<td>0.8247</td>
+<td>26792600</td>
+<td>3659</td>
 <td>-</td>
 </tr>
 </tbody>
 </table>
+<p><img alt="Linear Regression - Case 2" src="images/3ptindex.JPG" /></p>
 <ul>
-<li>Did Case 1 overfit or underfit? Explain:  Case 1 is an underfit.  R2 are very low.</li>
-<li>Did Case 2 overfit or underfit? Explain:  Case 2 is an underfit.  The is a small improvement, but R2 are very low.</li>
-<li>Did Case 3 overfit or underfit? Explain:  Case 3 is an underfit.  The is a small improvement, R2 are very low.</li>
-<li>Did Case 4 overfit or underfit? Explain:  Case 4 is not overfit or underfit.  It's odd that the test set did better, but that does not mean it's overfit.</li>
+<li>Did Case 1 overfit or underfit? Case 1 is in the nominal range.</li>
+<li>Did Case 2 overfit or underfit? Case 2 is in the nominal range.</li>
 </ul>
-<h3 id="adding-age">Adding Age<a class="headerlink" href="#adding-age" title="Permanent link">&para;</a></h3>
+<h3 id="adding-age-bmi-2-smoker-1">Adding Age + BMI * (2 * Smoker + 1)<a class="headerlink" href="#adding-age-bmi-2-smoker-1" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Did adding age improve the model: The model improved slightly from Case 2 to Case 3.</li>
-<li>Propose a possible explanation (consider how age might affect ticket price, and whether the data supports that):  I think age coupled with family size would improve where an entry was a child who was part of a family.  The fare price for the family would account for that.</li>
+<li>Did adding 3pt index improve the model: The model improved measurably from Case 1 to Case 2.</li>
+<li>Propose a possible explanation (consider how age might affect ticket price, and whether the data supports that):  The 3ptindex formula keeps non-smoker claims as is in determining claims.  But if someone is a smoker it amplifies the age and bmi by 3 times.  This helps the linear regression with these higher values.  </li>
+<li>At first I just had 2 times, but I tried 3 times and the results were better.  </li>
+<li>I did not need to use the other parameters either and still achieved better results.</li>
+<li>I wanted just a single variable to see the plot and in some ways stumbled into a great model.</li>
 </ul>
-<h3 id="worst">Worst<a class="headerlink" href="#worst" title="Permanent link">&para;</a></h3>
+<h2 id="section-5-compare-alternative-models">Section 5. Compare Alternative Models<a class="headerlink" href="#section-5-compare-alternative-models" title="Permanent link">&para;</a></h2>
+<h3 id="55-reflection">5.5 Reflection<a class="headerlink" href="#55-reflection" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Which case performed the worst: Case 1 - Age</li>
-<li>How do you know: The R2 value was almost 0.</li>
-<li>Do you think adding more training data would improve it (and why/why not):  I don't think adding more training data would help.  Age does not make a meaningful impact.</li>
-</ul>
-<h3 id="best">Best<a class="headerlink" href="#best" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Which case performed the best: Case 4 - Family Size, Class + Survived</li>
-<li>How do you know: The R2 was 10 times better. and the RMSE and MAE we noticeable lower.</li>
-<li>Do you think adding more training data would improve it (and why/why not):  I'm not sure.  In my case the test set performed better than the training set.  So it makes me think I had a good split or I maxed out any training data.</li>
-</ul>
-<h3 id="54-reflections-in-a-markdown-cell">5.4 Reflections (in a Markdown cell):<a class="headerlink" href="#54-reflections-in-a-markdown-cell" title="Permanent link">&para;</a></h3>
-<ul>
-<li>What patterns does the cubic model seem to capture:  For smaller family sizes it predicted lower fare values.</li>
-<li>Where does it perform well or poorly:  It does a little better than a straight linear line does when the family size is bigger.</li>
-<li>Did the polynomial fit outperform linear regression: Yes the R2 value 0.088 for poly but 0.022 for Linear.</li>
-<li>Where (on the graph or among which kinds of data points) does it fit best:  The prediction is best for two family members.  Followed by alone and then three family members.</li>
+<li>What patterns does the cubic model seem to capture:  It is very hard to know for case 1 with all the inputs.  For case 2 it matched the data slightly better than linear regression.</li>
+<li>Where does it perform well or poorly:  According to the residuals plot the result is very balanced for case 1.  I see some values on both sides of zero which is desirable. For case 2, there is still some balance, but it is not quite as good as case 1.</li>
+<li>Did the polynomial fit outperform linear regression: Yes the R² value 0.888 for poly but 0.80 for Linear for case 1.  For case 2 the results were almost the same.</li>
+<li>Where (on the graph or among which kinds of data points) does it fit best:  The prediction works well for smokers and non-smokers for case 1 and case 2. </li>
 </ul>
 <table>
 <thead>
@@ -1225,29 +1331,44 @@ target: fare</p>
 <tbody>
 <tr>
 <td>Linear</td>
+<td>Case 1</td>
+<td>All Inputs</td>
+<td>0.800</td>
+<td>30552437</td>
+<td>4013</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Poly Cubic</td>
+<td>Case 1</td>
+<td>All Inputs</td>
+<td>0.888</td>
+<td>17093508</td>
+<td>2772</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Linear</td>
 <td>Case 2</td>
-<td>Family Size</td>
-<td>0.022</td>
-<td>1414.62</td>
-<td>25.02</td>
+<td>3ptindex</td>
+<td>0.825</td>
+<td>26792600</td>
+<td>3659</td>
 <td>-</td>
 </tr>
 <tr>
 <td>Poly Cubic</td>
 <td>Case 2</td>
-<td>Family Size</td>
-<td>0.088</td>
-<td>1319.24</td>
-<td>24.07</td>
+<td>3ptindex</td>
+<td>0.824</td>
+<td>26873381</td>
+<td>3686</td>
 <td>-</td>
 </tr>
 </tbody>
 </table>
-<h3 id="cubic-vs-5th-order-polynomial-comparison">Cubic vs 5th Order Polynomial Comparison<a class="headerlink" href="#cubic-vs-5th-order-polynomial-comparison" title="Permanent link">&para;</a></h3>
-<ul>
-<li>The 5th order Polynomial underperforms the cubic Polynominal model because it shows as almost a straight line for the first six family number values.  It is almost linear for those first six feature points.  The last two feature points it dropped aggressively which did not really help the prediction.  </li>
-<li>Although the Cubic Polynomial was not great, it did better than linear and the 5th order.  The main reason is seen by the prediction line bending after feature point three instead of a steady slope up which does not correspond to the actual outcomes.</li>
-</ul>
+<p><img alt="Polynomial Cubic - Case 2" src="images/poly_3ptindex.JPG" /></p>
+<h3 id="56-compare-all-models">5.6 Compare All Models<a class="headerlink" href="#56-compare-all-models" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
@@ -1263,89 +1384,95 @@ target: fare</p>
 <tbody>
 <tr>
 <td>Linear</td>
-<td>Case 4</td>
-<td>Family Size, Class + Survived</td>
-<td>0.413</td>
-<td>849.46</td>
-<td>19.77</td>
+<td>Case 1</td>
+<td>All Imputs</td>
+<td>0.800</td>
+<td>30552437</td>
+<td>4013</td>
 <td>-</td>
 </tr>
 <tr>
-<td>Ridge Case</td>
-<td>Case 4</td>
-<td>Family Size, Class + Survived</td>
-<td>0.413</td>
-<td>849.11</td>
-<td>19.75</td>
+<td>Ridge</td>
+<td>Case 1</td>
+<td>All Imputs</td>
+<td>0.800</td>
+<td>30632410</td>
+<td>4025</td>
 <td>-</td>
 </tr>
 <tr>
 <td>ElasticNet</td>
-<td>Case 4</td>
-<td>Family Size, Class + Survived</td>
-<td>0.429</td>
-<td>825.78</td>
-<td>18.18</td>
+<td>Case 1</td>
+<td>All Imputs</td>
+<td>0.610</td>
+<td>59577764</td>
+<td>5621</td>
 <td>-</td>
 </tr>
 <tr>
-<td>Polynomial Cubic</td>
-<td>Case 4</td>
-<td>Family Size, Class + Survived</td>
-<td>0.469</td>
-<td>768.20</td>
-<td>15.49</td>
+<td>Poly Cubic</td>
+<td>Case 1</td>
+<td>All Imputs</td>
+<td>0.888</td>
+<td>17093508</td>
+<td>2772</td>
 <td>-</td>
 </tr>
 <tr>
-<td>Polynomial Cubic</td>
+<td>Linear</td>
 <td>Case 2</td>
-<td>Family Size</td>
-<td>0.088</td>
-<td>1319.24</td>
-<td>24.07</td>
+<td>3ptindex</td>
+<td>0.825</td>
+<td>26792600</td>
+<td>3659</td>
 <td>-</td>
 </tr>
 <tr>
-<td>Poly 5th Order</td>
+<td>Poly Cubic</td>
 <td>Case 2</td>
-<td>Family Size</td>
-<td>0.065</td>
-<td>1352.24</td>
-<td>24.34</td>
+<td>3ptindex</td>
+<td>0.824</td>
+<td>26873381</td>
+<td>3686</td>
 <td>-</td>
 </tr>
 </tbody>
 </table>
+<h3 id="reflection-57">Reflection 5.7:<a class="headerlink" href="#reflection-57" title="Permanent link">&para;</a></h3>
+<ul>
+<li>There was just one model that outperformed and that was Polynomial Cubic on Case 1.  It did much better than all other models.  I'm not sure why as it is hard to visualize the data.</li>
+<li>The other models did not perform better than Linear Regression on Case 1.  </li>
+<li>The Polynomial Cubic on Case 2 was slightly underperforming the Linear Regression on Case 2.</li>
+</ul>
 <h2 id="section-6-final-thoughts-insights">Section 6. Final Thoughts &amp; Insights<a class="headerlink" href="#section-6-final-thoughts-insights" title="Permanent link">&para;</a></h2>
 <h3 id="61-summarize-findings">6.1 Summarize Findings<a class="headerlink" href="#61-summarize-findings" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
-<p>What features were most useful?  The engineered feature class and survival had the largest positive effect on predicting fare.</p>
+<p>What features were most useful?  The engineered feature 3ptindex was a very powerful predictor of claims.</p>
 </li>
 <li>
-<p>What regression model performed best?  The Polynomial Cubic Model iterated on Case 4 had the best metrics. Yet, I don't think it is the best model.  I had a hard time visualizing these models.  I added a "residuals" graphic to each of Case 4 models.  </p>
+<p>What regression model performed best?  The Polynomial Cubic Model iterated on Case 1 had the best metrics.  The next best model was Case 2 and a simple Linear Regression.  It performed better than all of Case 1 except the Polynomial Cubic Model, and case 1 had all the inputs whereas Case 2 just had the single 3ptindex input.  </p>
 </li>
-<li>The goal is to have it evenly distributed around 0 all the way through the range with as little amplitude as possible.</li>
-<li>
-<p>The first three models had that characteristic for 2/3 of the range and then started having higher amplitudes at the larger fare values.
-However, the Polynomial Cubic Model had only three areas with very high amplitude.  This leads me to believe that it has overfitted the training data and that Ridge or ElasticNet should be used. </p>
-</li>
-<li>
-<p>How did model complexity or regularization affect results?  I think regularization had some positive effect, but it was pretty minor.  I was a little disappointed Ridge and ElasticNet did not have a higher impact.  I suspect the input features would need to be adjusted for more of a step function change.</p>
-</li>
-<li>
-<p>Further Discussion:  I chose to combine class and survived as a engineered feature.  After doing some more reading that may have a causality type effect.  I'll need to keep an eye out for this in the future, but I feel like the use of both here enhanced the prediction without causing a causality type effect.</p>
-</li>
+<li>You could see this in the residual graphics.  The Case 1 Cubic Model did have a quality distribution in the residual graphic.  To the eye the Case 2 Linear Model had the next best residual graphic.  Meaning the data points were around the zero line and not all on one side.  One also wants to see the points close to 0.</li>
 </ul>
-<h3 id="62-discuss-challenges">6.2 Discuss Challenges<a class="headerlink" href="#62-discuss-challenges" title="Permanent link">&para;</a></h3>
+<h3 id="62-discuss-challenges-faced">6.2 Discuss challenges faced.<a class="headerlink" href="#62-discuss-challenges-faced" title="Permanent link">&para;</a></h3>
 <ul>
-<li>
-<p>Was fare hard to predict? Why?  Fare was hard to predict with the given inputs.  There was a very low R2 value for Age, Family Size, and even for Age and Family Size engineered parameter.  Class really is what helped the models perform up to 10 times better when coupled with Family Size. </p>
-</li>
-<li>
-<p>Did skew or outliers impact the models?  Outliers had a decided effect on the models.  A few points were so high with no real basis in the features used in the models.</p>
-</li>
+<li>I had a hard time visualizing all the inputs for case 1.  That is what drove me to find one variable so I could see the regression line and polynomial cubic line.</li>
+<li>It was a challenge finding a single engineered variable that described the data.  But I did, and I am very pleased with the results.  It performed better that most of the models with all the inputs.</li>
+</ul>
+<h3 id="63-if-you-had-more-time-what-would-you-try-next">6.3 If you had more time, what would you try next?<a class="headerlink" href="#63-if-you-had-more-time-what-would-you-try-next" title="Permanent link">&para;</a></h3>
+<ul>
+<li>I would try adding more inputs to Case 2. </li>
+<li>I would try Ridge Regression and ElasticNet, but try varying the parameters.  </li>
+<li>I also would try voting.</li>
+</ul>
+<h3 id="code">Code<a class="headerlink" href="#code" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The notebook for this project can be found at: <a href="https://github.com/hrawp/applied-ml-hrawp/blob/main/notebooks/final/regression_aaron.ipynb">regression_aaron.ipynb</a></li>
+</ul>
+<h2 id="peer-review">Peer Review<a class="headerlink" href="#peer-review" title="Permanent link">&para;</a></h2>
+<ul>
+<li>I reviewed Womenker Karto's Final Project.  The review can be found at: <a href="https://github.com/hrawp/applied-ml-hrawp/blob/main/docs/final/peer_review.md">Regression Analysis Project</a></li>
 </ul>
 <h2 id="how-to-run-the-jupyter-notebook">How to Run the Jupyter Notebook<a class="headerlink" href="#how-to-run-the-jupyter-notebook" title="Permanent link">&para;</a></h2>
 <p>This Jupyter Notebook utilizes some packages in the uv environment and will install some dependencies.  The following set of commands would help you complete these two objectives. </p>
