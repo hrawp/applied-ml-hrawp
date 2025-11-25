@@ -1,7 +1,7 @@
-# Final - Predicting a Continuous Target with Regression (Medical Cost)
+# Final - Predicting Medical Cost with Regression
 **Author:** AARON 
 **Date:** November 24, 2025 
-**Objective:** Create a Regression Model to predict Medical Claims data.
+**Objective:** Create a Regression Model to predict Medical Claims.
 
 ## Introduction
 - Using the Medical Cost Personal Dataset, decide what inputs to use in Regression model to predict Medical Claims.
@@ -29,7 +29,7 @@ Compare the train vs test results for each.
 | Linear Regression | Case 1 | all features                  | 0.7376      | 0.8001    | 30552437 | 4013   | -     |
 | Linear Regression | Case 2 | 3ptindex                      | 0.7454      | 0.8247    | 26792600 | 3659   | -     |
 
-![Linear Regression - Case 2](3ptindex.JPG)
+![Linear Regression - Case 2](images/3ptindex.JPG)
 
 - Did Case 1 overfit or underfit? Case 1 is in the nominal range.
 - Did Case 2 overfit or underfit? Case 2 is in the nominal range.
@@ -58,10 +58,10 @@ Compare the train vs test results for each.
 | Linear        | Case 2 | 3ptindex                      | 0.825     | 26792600 | 3659   | -     |
 | Poly Cubic    | Case 2 | 3ptindex                      | 0.824     | 26873381 | 3686   | -     |
 
-![Polynomial Cubic - Case 2](poly_3ptindex.JPG)
+![Polynomial Cubic - Case 2](images/poly_3ptindex.JPG)
 
 ### 5.6 Compare All Models
-All Models
+
 | Model Type    | Case   | Features Used                 | Test R²   | RMSE     | MAE    | Notes |
 |---------------|--------|-------------------------------|-----------|----------|--------|-------|
 | Linear        | Case 1 | All Imputs                    | 0.800     | 30552437 | 4013   | -     |
@@ -96,10 +96,11 @@ All Models
 - I also would try voting.
 
 ### Code
-- The notebook for this project can be found at: https://github.com/hrawp/applied-ml-hrawp/blob/main/notebooks/final/regression_aaron.ipynb
+- The notebook for this project can be found at: [regression_aaron.ipynb](https://github.com/hrawp/applied-ml-hrawp/blob/main/notebooks/final/regression_aaron.ipynb)
+
 
 ## Peer Review
-- I reviewed Alissa Beaderstadt's Midterm Project.  The review can be found at: [Beaderstadt UCI Mushroom Dataset](https://github.com/hrawp/applied-ml-hrawp/blob/main/docs/midterm/peer_review.md)
+- I reviewed Womenker Karto's Final Project.  The review can be found at: [Regression Analysis Project](https://github.com/hrawp/applied-ml-hrawp/blob/main/docs/final/peer_review.md)
 
 ## How to Run the Jupyter Notebook
 

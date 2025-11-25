@@ -6,7 +6,8 @@
 **Objective:** Analyze the work done in this project and give feedback within the four sections below.
 
 ### Notebook Link:
-https://github.com/wkarto/ml_regression_karto/blob/main/regression_karto.ipynb
+[Regression Analysis Project](https://github.com/hrawp/applied-ml-hrawp/blob/main/docs/final/peer_review.md)
+
 
 ### 1 Clarity & Organization (Is the notebook structured and easy to follow?)
 
